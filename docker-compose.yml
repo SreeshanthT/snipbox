@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: .
+    image: snip_box_image
+    container_name: snip_box_container
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    command: python manage.py runserver 0.0.0.0:8000
+#    depends_on:
+#      - db
+
+#  db:
+#    image: postgres:15
+#    container_name: postgres_db
+#    env_file:
+#      - .env
+#    volumes:
+#      - postgres_data:/var/lib/postgresql/data
+#    ports:
+#      - "5432:5432"
+#
+#volumes:
+#  postgres_data:
