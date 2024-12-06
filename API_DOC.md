@@ -185,18 +185,14 @@ SnipBox is a short note-saving application where users can save snippets, organi
   {
     "id": 2,
     "title": "Updated Snippet",
-    "note": "This is a note for the snippet.",
+    "note": "This is the updated note for the snippet.",
     "created_at": "2024-12-06T09:41:26.794999Z",
     "updated_at": "2024-12-06T09:44:52.314939Z",
     "user": 2,
     "tags": [
       {
-        "id": 3,
-        "title": "Python"
-      },
-      {
-        "id": 4,
-        "title": "Django"
+        "id": 5,
+        "title": "UpdatedTag"
       }
     ]
   }
@@ -235,7 +231,7 @@ SnipBox is a short note-saving application where users can save snippets, organi
   }
   ```
   
-### **8. Tag Linked Snippets API**
+### **9. Tag Linked Snippets API**
 - **Endpoint**: `/api/tags/<id>/snippets_by_tag/`
 - **Method**: `GET`
 - **Description**: Retrieves all snippets linked to a specific tag.
